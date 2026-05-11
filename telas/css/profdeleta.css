@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+*{
+
+padding: 0px;    
+margin: 0px;
+
+}
+
+body{  
+
+    background-color: rgb(164, 164, 164);
+    background-image: url("../../img/excluir.jpg");
+    /*comando para colocar a imagem de fundo da página "imagem está na pasta img"*/
+    background-repeat: no-repeat; 
+    background-size: cover; /* ocupar a tela toda */
+    background-attachment: fixed; /* fixar na tela */
+    height: 100%; /* altura   */
+    background-position: center center; /* posicionar no centro da tela    */
+
+    }
+
+
+.logo{
+
+    height: 120px;      /* Largura da img da logo*/
+    width: 35%;         /* Comprimento da img da logo*/
+    margin: auto;       /* Margem automática da página*/
+    display: flex;      /*display flex para deixar a img flexível a posições*/
+    justify-content: center;   /* Código para centralizar a IMG no meio da página*/
+    margin-top: 1%;            /* Código para dar um espaço na parte de cima da imagem */
+}
+
+.cabeca{
+text-align: center; /* centralizar */
+margin-top: 10px; /* margem 20 para todos os lados */
+color: #ffffff;
+}
+
+.green{
+ color: #00ff00;
+ font-weight: bold;   
+}
+
+.red{
+color: #ff0000;
+font-weight: bold;
+}
+
+.caixa{
+
+    width: 450px;            /* largura da caixa */
+    height: auto;            /* altura automática conforme o conteúdo */
+    display: block;
+                            /* ativa o modo flexível (flexbox) */
+    align-items: center; /* centraliza os itens horizontalmente */
+
+    border-radius: 20px;     /* arredonda as bordas */
+                                                      
+    
+    padding-left: 10px;     /* espaço interno à esquerda */
+    padding-right: 10px;    /* espaço interno à direita */
+    margin-top: 1%;         /* espaço externo acima da caixa */
+    margin-bottom: 20px;
+
+    background: rgba(0, 0, 0, 0.618); /* fundo preto com transparência */
+    box-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve */
+                 0px 0px 10px rgb(0, 0, 0), /* sombra média */
+                 0px 0px 15px rgb(0, 0, 0), /* sombra mais forte */
+                 0px 0px 20px rgb(0, 0, 0); /* sombra intensa */
+    border: 2px solid rgb(255, 255, 255); /* borda branca */
+    margin: auto; /* centralizar */
+    margin-top: 30px; /* espaço externo de cima*/
+    justify-content: center;
+}
+
+input{
+
+    border: none;               /* remove todas as bordas */
+    border-bottom: 2px solid #f5f5f5; /* cria apenas uma linha embaixo */
+    outline:none;               /* remove o contorno ao clicar */
+    background: transparent;    /* fundo invisível */
+    color: #ffffff;             /* texto branco */
+}
+
+
+.excluir{
+
+color: #ffffff;
+padding: 20px;
+text-align: center;
+margin: 5px;
+
+}
+
+.mensagem{
+
+padding: 20px;
+text-align: center;
+color: #ffffff;
+
+}
+
+.treino{
+
+   display: inline-block;
+    padding: 10px;
+    align-items: center; /* centraliza os itens horizontalmente */
+    background: rgba(0, 0, 0, 0.618); /* fundo preto com transparência */
+    border: 2px solid rgb(255, 255, 255); /* borda branca */
+    border-radius: 10px;     /* arredonda as bordas */
+    margin: auto; /* centralizar */
+    margin: 5px /* espaço externo de cima*/
+    
+}
+
+.taluno{
+text-decoration: underline;
+margin-bottom: 13px;
+color: #ffffff;
+
+}
+
+
+label{
+
+margin: 3px;
+
+}
+
+p{
+
+margin: 10px;
+
+}
+
+
+
+.voltar{
+    font-family: Georgia;   /* Código para mudar a fonte do texto*/
+    display: block;    
+    margin: 20px auto; /* centraliza e dá espaço */
+    background: rgba(0, 0, 0, 0.843);  /* Código para colocar a cor do lado de dentro do botão*/
+    padding: 6px 50px;               /*Comando para dar um espaço em todos os lados da parte de dentro da caixa*/        
+    border-radius: 10px;              /* Código para arredondar o botão*/
+    margin-bottom: 5px;
+    margin-top: 20px;                   /* Código para dar um espaço no topo do lado de fora*/
+    color: rgb(255, 255, 255);      /* Código para mudar a cor do texto*/
+    box-shadow: 0px 0px 5px rgb(42, 42, 42),  /* Código para colocar uma sombra atrás da caixa do botão*/
+                0px 0px 10px rgb(42, 42, 42); /* Código para colocar uma sombra atrás da caixa do botão*/         
+}
+
+button{
+
+    margin: 3px;
+    font-family: Georgia;   /* Código para mudar a fonte do texto*/
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.514);  /* Código para colocar a cor do lado de dentro do botão*/
+    border-radius: 1px;              /* Código para arredondar o botão*/      
+    color: rgb(253, 253, 253);      /* Código para mudar a cor do texto*/
+    box-shadow: 0px 0px 5px rgb(42, 42, 42),  /* Código para colocar uma sombra atrás da caixa do botão*/
+                0px 0px 10px rgb(42, 42, 42); /* Código para colocar uma sombra atrás da caixa do botão*/
+}
+
+button:hover{
+    transform:scale(1.1);          /* Código para dar um zoom no botão quando passar o mouse*/
+    box-shadow:0 0 5px #3fb0f1; /* Código para colocar uma cor atrás do botão quando passar o mouse*/
+}
+
+button:active{
+    background-color: rgb(153, 240, 255);  /* Código para mudar o botão de cor quando clicar nele */
+}
+
+a{
+    color:#ffffff;  /* Comando para mudar a cor do texto */
+    font-size: 15px;  /* Comando para mudar o tamanho da letra do texto*/
+    text-decoration:none ;  /* Comando para remover o detalhe que vem no link*/
+}
+
+
+a:hover{
+    color: #3fb0f1; /* muda de cor ao passar o mouse, igual ao padrão do projeto */
+  }
+
+.bot{
+
+margin-top: 10px;
+
+}
+.bot:hover{
+   
+transform:scale(1.0);  
+}
+

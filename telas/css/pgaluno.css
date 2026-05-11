@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    /*Comandos padding e margin servem para a largura e margem da página completa*/
+}
+
+body{
+    background-image: url("../../img/fotoaluno.png");
+    /*comando para colocar a imagem de fundo da página*/
+    background-size: cover;
+    /*faz a imagem cobrir toda a tela*/
+    background-position: center;
+    /*centraliza a imagem de fundo*/
+    min-height: 100vh;
+    /*garante que o fundo cobre a tela inteira*/
+}
+
+.img_logo{
+    height: 130px;      /* Largura da img da logo*/
+    width: 35%;         /* Comprimento da img da logo*/
+    margin: auto;       /* Margem automática da página*/
+    display: flex;      /*display flex para deixar a img flexível a posições*/
+    justify-content: center;   /* Código para centralizar a IMG no meio da página*/
+    margin-top: 2%;            /* Código para dar um espaço na parte de cima da imagem */
+    margin-bottom: 1%;         /* Código para dar um espaço na parte de baixo da imagem */
+}
+
+.caixa{
+    margin: auto;             /* Margem automática - centraliza a caixa */
+    margin-top: 20px;         /* espaço acima da caixa */
+    margin-bottom: 40px;      /* espaço abaixo da caixa */
+    width: 600px;             /* largura da caixa */
+    height: auto;             /* altura automática conforme o conteúdo */
+
+    border-radius: 20px;      /* arredonda as bordas */
+    padding: 30px;            /* espaço interno em todos os lados */
+
+    display: flex;            /* ativa o flexbox */
+    flex-direction: column;   /* organiza os elementos em coluna */
+    align-items: center;      /* centraliza horizontalmente */
+    gap: 15px;                /* espaço entre os elementos */
+
+    background: rgba(0, 0, 0, 0.7);        /* fundo preto com transparência */
+    box-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve */
+    0px 0px 10px rgb(0, 0, 0), /* sombra média */
+    0px 0px 15px rgb(0, 0, 0), /* sombra mais forte */
+    0px 0px 20px rgb(0, 0, 0); /* sombra intensa */
+    border: 2px solid rgb(255, 255, 255);  /* borda branca */
+}
+
+h1{
+    font-family: Georgia;         /* define a fonte */
+    text-align: center;           /* centraliza o texto */
+    color: rgb(255, 255, 255);    /* cor branca */
+    font-size: 30px;              /* tamanho do texto */
+    text-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve no texto */
+    0px 0px 10px rgb(0, 0, 0); /* sombra mais forte */
+}
+
+h2{
+    font-family: Georgia;         /* define a fonte */
+    text-align: center;           /* centraliza o texto */
+    color: rgb(255, 255, 255);    /* cor branca */
+    font-size: 22px;              /* tamanho do texto */
+    text-shadow: 0px 0px 5px rgb(0, 0, 0),
+    0px 0px 10px rgb(0, 0, 0);
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.3); /* linha separadora abaixo */
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card_treino{
+    width: 100%;                            /* ocupa toda a largura da caixa */
+    background: rgba(255, 255, 255, 0.08); /* fundo levemente claro */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* borda branca semitransparente */
+    border-radius: 12px;                   /* arredonda o card */
+    padding: 18px 22px;                    /* espaço interno */
+}
+
+.card_treino h3{
+    font-family: Georgia;
+    color: #3fb0f1;                        /* azul igual ao hover dos botões do projeto */
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.card_treino p{
+    font-family: Arial;
+    color: rgb(240, 240, 240);             /* branco levemente suave */
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.sem_treino{
+    font-family: Arial;
+    color: rgb(200, 200, 200);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sair{
+    color: rgb(253, 252, 252);     /* cor do texto */
+    text-decoration: none;         /* remove o sublinhado do link */
+    font-size: 18px;               /* tamanho do texto */
+    align-self: flex-start;        /* alinha o link para a esquerda dentro da caixa */
+}
+
+.sair:hover{
+    color: #3fb0f1;                /* muda de cor ao passar o mouse, igual ao padrão do projeto */
+}

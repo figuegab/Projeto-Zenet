@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+
+padding: 0px;
+margin: 0px;
+/*Comandos padding e margin servem para a largura e margem da página completa*/
+}
+
+body{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-image: url("../../img/salvar.png"); /*comando para colocar a imagem de fundo da página "imagem está na pasta img"*/
+    background-repeat: no-repeat; 
+    background-size: cover; /* ocupar a tela toda */
+    background-attachment: fixed; /* fixar na tela */
+    height: 100%; /* altura   */
+    background-position: center center; /* posicionar no centro da tela    */
+
+
+}
+
+p{
+
+color: rgb(255, 255, 255);
+margin: 1rem;
+}
+
+.logo{
+
+    height: 120px;      /* Largura da img da logo*/
+    width: 35%;         /* Comprimento da img da logo*/
+    margin: auto;       /* Margem automática da página*/
+    display: flex;      /*display flex para deixar a img flexível a posições*/
+    justify-content: center;   /* Código para centralizar a IMG no meio da página*/
+    margin-top: 1%;            /* Código para dar um espaço na parte de cima da imagem */
+   
+
+}
+
+.green{
+ color: #00ff00;
+ font-weight: bold;   
+ margin-top: 10px; /* margem 10 para todos os lados */
+}
+
+
+
+button{
+
+font-family: Georgia;   /* Código para mudar a fonte do texto*/
+    display: flex;      /*Comando para deixar a caixa mais flexível*/
+    margin: auto;     /* Margem automática da página*/
+    background: rgba(0, 0, 0, 0.843);  /* Código para colocar a cor do lado de dentro do botão*/
+    padding: 6px 50px;               /*Comando para dar um espaço em todos os lados da parte de dentro da caixa*/        
+    border-radius: 10px;              /* Código para arredondar o botão*/
+    margin-bottom: 5px;
+    margin-top: 13px;                   /* Código para dar um espaço no topo do lado de fora*/
+    color: rgb(255, 255, 255);      /* Código para mudar a cor do texto*/
+    box-shadow: 0px 0px 5px rgb(42, 42, 42),  /* Código para colocar uma sombra atrás da caixa do botão*/
+                0px 0px 10px rgb(42, 42, 42); /* Código para colocar uma sombra atrás da caixa do botão*/
+
+}
+
+button:hover{
+    transform:scale(1.1);          /* Código para dar um zoom no botão quando passar o mouse*/
+    box-shadow:0 0 5px #3fb0f1; /* Código para colocar uma cor atrás do botão quando passar o mouse*/
+}
+
+button:active{
+    background-color: rgb(153, 240, 255);  /* Código para mudar o botão de cor quando clicar nele */
+}
+
+a{
+    color:#ffffff;  /* Comando para mudar a cor do texto */
+    font-size: 15px;  /* Comando para mudar o tamanho da letra do texto*/
+    text-decoration:none ;  /* Comando para remover o detalhe que vem no link*/
+}
+
+
+a:hover{
+    color: #3fb0f1; /* muda de cor ao passar o mouse, igual ao padrão do projeto */
+  }

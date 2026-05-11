@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+*{
+
+padding: 0px; /* remove o espaço interno padrão de todos os elementos */
+margin: 0px;  /* remove o espaço externo padrão de todos os elementos */
+
+}
+
+body{
+    background-image: url("../../img/cadastro.png"); /* define uma imagem como fundo da página */
+    background-color: #000000;
+    background-size: cover;   /* ocupar a tela toda */     
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* fixar na tela */
+    height: 95vh; /* altura   */
+    background-position: center center; /* posicionar no centro da tela  */
+}
+
+img{
+    margin-left: 28%; /* empurra a imagem para a direita */
+    width: 300px;     /* define a largura da imagem */
+
+}
+
+.caixa{
+
+      
+    flex-direction: column;  /* organiza os elementos em coluna (um embaixo do outro) */
+    gap: 15px;               /* espaço entre os elementos dentro da caixa */
+    width: 350px;            /* largura da caixa */
+    height: auto;            /* altura automática conforme o conteúdo */
+    
+    display: flex;           /* ativa o modo flexível (flexbox) */
+    align-items: center;     /* centraliza os itens horizontalmente */
+
+    border-radius: 20px;     /* arredonda as bordas */
+                                 /* espaço interno em todos os lados */
+    
+    padding-top: 20px;      /* espaço interno em cima */
+                             /* espaço interno à direita */
+    /*padding-bottom: auto;   /* valor inválido, não tem efeito */
+    padding-left: 10px;     /* espaço interno à esquerda */
+    padding-right: 50px;
+    margin-top: 1%;         /* espaço externo acima da caixa */
+    margin-left: 0px;       /* remove espaço à esquerda */
+
+    background: rgba(0, 0, 0, 0.7); /* fundo preto com transparência */
+    box-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve */
+                 0px 0px 10px rgb(0, 0, 0), /* sombra média */
+                 0px 0px 15px rgb(0, 0, 0), /* sombra mais forte */
+                 0px 0px 20px rgb(0, 0, 0); /* sombra intensa */
+    border: 2px solid rgb(255, 255, 255); /* borda branca */
+    margin: auto; /* centralizar */
+    margin-top: 40px /* espaço externo de cima*/
+    
+}
+
+.cadastros{
+    font-family: Georgia;  /* define a fonte */ 
+    font-size: 35px;       /* tamanho do texto */
+    padding-top: 20px;     /* espaço interno acima */
+    padding-bottom: 3%;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve no texto */
+                 0px 0px 10px rgb(0, 0, 0); /* sombra mais forte no texto */
+    color: rgb(255, 255, 255); /* cor branca */
+    display: flex;
+    justify-content: center; /* Horizontal */
+    align-items: center;    /* Vertical */
+    margin-left: 40px; /* espaço à esquerda */
+    
+
+}
+
+
+
+button{
+    font-family: Georgia;   /* define a fonte */
+    padding: 10px 115px;    /* espaço interno (cima/baixo e lados) */
+    border-radius: 20px;    /* arredonda o botão */
+    border-color: #ffffff;  /* cor da borda */
+    margin-left: 6%;        /* espaço à esquerda */
+    margin-top: 6%;         /* espaço acima */
+    
+    text-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve no texto */
+                 0px 0px 10px rgb(0, 0, 0); /* sombra mais forte */
+    background: rgba(0, 0, 0, 0); /* fundo transparente */
+    color: rgb(253, 253, 253);    /* cor do texto */
+    box-shadow: 0px 0px 5px rgb(0, 0, 0),  /* sombra leve */
+                0px 0px 10px rgb(0, 0, 0), /* sombra média */
+                0px 0px 15px rgb(0, 0, 0), /* sombra forte */
+                0px 0px 20px rgb(12, 12, 12); /* sombra intensa */
+    margin-bottom: 30px; /* espaço interno na parte de baixo   */
+}
+
+button:hover{
+    transform:scale(1.1); /* aumenta o tamanho do botão ao passar o mouse */
+    box-shadow:0 0 15px #3fb0f1; /* muda a cor da sombra */
+}
+
+button:active{
+    background-color: rgb(153, 240, 255); /* muda a cor ao clicar */
+}
+
+input{
+    
+    width:100%;                 /* ocupa toda a largura */
+    padding: 14px 20px;         /* espaço interno */
+    font-size:17px;             /* tamanho do texto */
+    border: none;               /* remove todas as bordas */
+    border-bottom: 2px solid #f5f5f5; /* cria apenas uma linha embaixo */
+    outline:none;               /* remove o contorno ao clicar */
+    background: transparent;    /* fundo invisível */
+    color: #ffffff;             /* texto branco */
+    padding-bottom: 8%;         /* espaço interno embaixo */
+
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255); /* cor do texto de exemplo dentro do campo */
+    
+}
+
+input:focus {
+    border-bottom: 3px solid #ffffff; /* aumenta a linha ao clicar */
+}
+
+.voltar {
+    color: rgb(253, 252, 252); /* cor do texto */
+    text-decoration: none;     /* remove o sublinhado do link */
+    font-size: 20px;           /* tamanho do texto */
+    margin-left: -80%;         /* move o elemento para a esquerda */
+
+}
+
+.erro {
+color: #ff0000;
+margin-left: 40px;
+
+}

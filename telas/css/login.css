@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+
+padding: 0px;
+margin: 0px;
+/*Comandos padding e margin servem para a largura e margem da página completa*/
+}
+
+body{
+    background-image: url("../../img/login.png");
+    /*comando para colocar a imagem de fundo da página "imagem está na pasta img"*/
+    background-repeat: no-repeat; 
+    background-size: cover; /* ocupar a tela toda */
+    background-attachment: fixed; /* fixar na tela */
+    height: 100%; /* altura   */
+    background-position: center center; /* posicionar no centro da tela    */
+}
+
+
+.img_logo{               
+    height: 200px;      /* Largura da img da logo*/
+    width: 35%;         /* Comprimento da img da logo*/
+    margin: auto;       /* Margem automática da página*/
+    display: flex;      /*display flex para deixar a img flexível a posições*/
+    justify-content: center;   /* Código para centralizar a IMG no meio da página*/
+    margin-top: 3%;            /* Código para dar um espaço na parte de cima da imagem */
+    margin-bottom: 3%;         /* Código para dar um espaço na parte de baixo da imagem */
+             /* Código para colocar um espaço do lado de dentro da caixa onde está a imagem*/
+
+}
+
+.caixa_login{
+    margin:  auto;     /* Margem automática da página*/
+    margin-top: 130px; /* Código para dar um espaço na parte de cima da caixa */
+    width: 300px;       /* Comprimento da caixa*/
+    height: 300px;       /* Largura da caixa*/
+    border-radius: 20px; /* Código para arredondar as bordas da caixa*/
+    padding: 25px;       /*Comando para dar um espaço em todos os lados da parte de dentro da caixa*/
+    display: flex;       /*Comando para deixar a caixa mais flexível*/
+    justify-content: center; /*Comando para centralizar a caixa no centro da página*/
+    align-items: center;      /* Comando para alinhar os itens de dentro da caixa */
+
+    background: rgba(0, 0, 0, 0.7);        /* Comando para colocar cor dentro da caixa*/
+    box-shadow: 0px 0px 5px rgb(0, 0, 0),  /* Comando para colocar uma sombra atrás da caixa*/
+                 0px 0px 10px rgb(0, 0, 0), /* Comando para colocar uma sombra atrás da caixa*/
+                 0px 0px 15px rgb(0, 0, 0), /* Comando para colocar uma sombra atrás da caixa*/
+                 0px 0px 20px rgb(0, 0, 0); /* Comando para colocar uma sombra atrás da caixa*/
+    border: 2px solid rgb(255, 255, 255);   /* Comando para colocar uma borda na caixa*/
+    padding-bottom: 50px; /* Comando para dar um espaço no lado interno de cima     */
+    padding-top: 35px;  /*  Comando para dar um espaço no lado interno de baixo     */
+}
+
+h1{
+    font-family: Georgia;   /* Código para mudar a fonte do texto*/
+    text-align: center;     /* Código para centralizar o texto*/
+    margin-top: 27%;        /* Código para dar um espaço na parte de cima*/
+    margin-bottom: 10%;     /* Código para dar um espaço na parte de baixo*/
+
+    color: rgb(255, 255, 255);   /* Código para mudar a cor do texto*/
+    font-size: 50px;               /* Código para mudar a fonte do texto*/
+    text-shadow: 0px 0px 5px rgb(0, 0, 0), /* Comando para colocar uma sombra atrás do texto*/
+                 0px 0px 10px rgb(0, 0, 0); /* Comando para colocar uma sombra atrás do texto*/
+}
+
+input{
+    color:#ffffff;    /* Código para mudar a cor do texto*/
+    padding:12px;        /*Comando para dar um espaço em todos os lados da parte de dentro da caixa*/
+    border: none;              /* remove todas as bordas */
+    border-bottom: 2px solid #f5f5f5; /* cria só a linha embaixo */
+    outline:none;    /* remove a borda azul ao clicar */
+    font-size:17px;   /* Código para mudar a fonte do texto*/
+    background: transparent; /* fundo invisível */
+    padding-top: 10%;      /* Código para dar um espaço na parte de cima do lado de dentro*/
+    margin-top: 1%;        /* Código para dar um espaço na parte de cima do lado de fora*/
+}
+
+input::placeholder {
+    color: rgb(255, 254, 254);    /* Código para mudar a cor do texto do lado de dentro do input*/
+}
+
+input:focus {
+    border-bottom: 3px solid #ffffff; /* muda a cor ao clicar */
+}
+
+button{
+    font-family: Georgia;   /* Código para mudar a fonte do texto*/
+    display: flex;      /*Comando para deixar a caixa mais flexível*/
+    margin: auto;     /* Margem automática da página*/
+    background: rgba(0, 0, 0, 0);   /* Código para colocar a cor do lado de dentro do botão*/
+    padding: 10px 40px;               /*Comando para dar um espaço em todos os lados da parte de dentro da caixa*/        
+    border-radius: 20px;              /* Código para arredondar o botão*/
+    margin-top: 1%;                   /* Código para dar um espaço no topo do lado de fora*/
+
+    color: rgb(253, 253, 253);      /* Código para mudar a cor do texto*/
+    box-shadow: 0px 0px 5px white,  /* Código para colocar uma sombra atrás da caixa do botão*/
+                0px 0px 10px white; /* Código para colocar uma sombra atrás da caixa do botão*/
+}
+
+button:hover{
+    transform:scale(1.1);          /* Código para dar um zoom no botão quando passar o mouse*/
+    box-shadow:0 0 15px #3fb0f1; /* Código para colocar uma cor atrás do botão quando passar o mouse*/
+}
+
+button:active{
+    background-color: rgb(153, 240, 255);  /* Código para mudar o botão de cor quando clicar nele */
+}
+
+.cadastro{
+    color: #f5f5f5;       /* Código para mudar a cor do texto*/
+    font-family: arial;     /* Código para mudar a fonte do texto*/
+    font-size: 15px;        /* Comando para mudar o tamanho das letras do texto*/
+    padding-bottom: 24%;    /* Comando para dar um espaço embaixo do lado de dentro */
+    
+}
+
+a{
+    color:#e0e4e6;  /* Comando para mudar a cor do texto */
+    font-size: 15px;  /* Comando para mudar o tamanho da letra do texto*/
+    text-decoration:none ;  /* Comando para remover o detalhe que vem no link*/
+}
+
+a:hover{
+    color:#3fb0f1; /* Comando para mudar o texto do link de cor quando passar o mouse*/
+}
+
+.erro{
+padding: 0px;
+margin: 0px;
+color: #ff0000;
+text-align: center;
+
+}
